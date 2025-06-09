@@ -1,0 +1,91 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e tipografia */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7f3e7;
+  color: #4e4e4e;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: #a1c6b7;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.25rem;
+}
+
+/* Seção de conteúdo */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2a5c2b;
+}
+
+.text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.image {
+  flex: 1;
+  max-width: 45%;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+  background: #a1c6b7;
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .image {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}
